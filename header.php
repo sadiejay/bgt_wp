@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- TYPEKIT / GOOGLE FONTS / FONTS.COM -->
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 		<!-- STYLES ARE ENQUED THROUGH FUNCTIONS.PHP -->
 
@@ -18,3 +18,27 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+
+		<nav>
+      <!-- logo -->
+      <div class="nav__logo">
+				<h1>bgt</h1>
+			</div>
+
+      <!-- nav links-->
+      <div class="nav__links">
+
+				<ul>
+					 <li><a href="index.html">home</a></li>
+					 <li><a href="tours.html">tours</a></li>
+					 <li><a href="about.html">about</a></li>
+					 <li><a href="blog.html">blog</a></li>
+					 <li><a href="contact.html">contact</a></li>
+				</ul>
+
+      </div><!-- nav links -->
+
+    </nav>
+
+
+    <main>
