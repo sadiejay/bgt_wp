@@ -28,13 +28,7 @@
       <!-- nav links-->
       <div class="nav__links">
 
-				<ul>
-					 <li><a href="index.html">home</a></li>
-					 <li><a href="tours.html">tours</a></li>
-					 <li><a href="about.html">about</a></li>
-					 <li><a href="blog.html">blog</a></li>
-					 <li><a href="contact.html">contact</a></li>
-				</ul>
+				<?php html5blank_nav(); ?>
 
       </div><!-- nav links -->
 
