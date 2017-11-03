@@ -16,6 +16,10 @@
 		</ul>
 	</div><!--  contact -->
 
+	<div class="footer__copywright">
+		Copyright &copy; <?= date('Y'); ?> <a href="http://simplysadiejay.com" target="_blank" rel="noopener">sadie jay designs</a> All Rights reserved
+	</div>
+
 	<div class="footer__blog">
 		<div class="blog__individual1">
 
