@@ -21,7 +21,7 @@ include (TEMPLATEPATH . '/functions/custom-post-types.php' );
 
 if (!isset($content_width))
 {
-    $content_width = 900;
+    $content_width = 1200;
 }
 
 if (function_exists('add_theme_support'))
