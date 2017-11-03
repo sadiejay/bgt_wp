@@ -22,7 +22,11 @@
 		<nav>
       <!-- logo -->
       <div class="nav__logo">
-				<h1>bgt</h1>
+				<h1>
+					<a href="<?php bloginfo('url'); ?>">
+					bgt
+					</a>
+				</h1>
 			</div>
 
       <!-- nav links-->
