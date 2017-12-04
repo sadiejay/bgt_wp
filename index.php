@@ -11,6 +11,10 @@
 			<?php the_post_thumbnail(); ?>
 		</div><!-- trip thumbnail-->
 
+		<div class="blog__date">
+			<?php echo get_the_date(); ?>
+		</div><!-- date-->
+
 		<div class="blog__text">
 			<?php the_title(); ?>
 		</div><!-- text-->
