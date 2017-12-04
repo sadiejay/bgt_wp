@@ -15,7 +15,7 @@
 			<p>Greece 2018</p>
 		</div><!-- text-->
 
-		<button class="button button__read"><a href="blog-single.html" target="_blank" rel="noopener">read more</a></button>
+		<button class="button button__read"><a href="<?php the_permalink(); ?>" target="_blank" rel="noopener">read more</a></button>
 
 	</article><!--trip individual1-->
 
