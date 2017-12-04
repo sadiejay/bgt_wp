@@ -21,7 +21,7 @@ get_header(); ?>
 
   <div class="about__text">
 
-    <h2>about</h2>
+    <h2><?php the_field('subtitle');?></h2>
     <p>Cupcake ipsum dolor sit amet liquorice cake gingerbread powder. Pudding topping croissant halvah. Chocolate marzipan biscuit gummies tart I love. Pie cookie chocolate oat cake lemon drops cake jelly. Sesame snaps I love marshmallow oat cake fruitcake marshmallow marshmallow cotton candy toffee. Pastry biscuit lemon drops sugar plum toffee carrot cake. Candy canes chocolate sweet topping I love macaroon I love. Muffin chocolate cake caramels carrot cake bear claw chocolate croissant I love. Donut fruitcake wafer dragée dessert marzipan. Halvah I love apple pie powder.</p>
 
   </div><!-- about text -->
