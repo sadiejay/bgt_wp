@@ -3,7 +3,7 @@
 
 	<?php get_template_part('partials/searchform'); ?>
 
-	<div class="sidebar-widget">
+	<div class="sidebar-widget blog blog__i">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
 	</div>
 

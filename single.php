@@ -71,6 +71,7 @@
 
 </section><!-- contact -->
 
+<?php get_sidebar(); ?>
 
 <?php endwhile; endif; ?>
 
