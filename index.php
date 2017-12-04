@@ -5,6 +5,8 @@
 <section class="blog">
 	<h1>Blog Posts</h1>
 
+<?php if(have_posts()): while(have_posts()): the_post();?>
+
 	<article class=" blog__i blog__individual1">
 
 		<div class="blog__thumb">
@@ -23,7 +25,7 @@
 
 	</article><!--trip individual1-->
 
-
+<?php endwhile; endif; ?>
 
 </section><!-- blog -->
 
