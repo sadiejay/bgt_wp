@@ -43,12 +43,6 @@
 
 </article><!-- content__text -->
 
-<!-- pagination-->
-<div id="pagination">
-	<div class=​"prev_post"​>​<?php next_post_link('%link', 'newer​​stuff'​) ?></div>
-	<div class="next_post"​><?php previous_post_link('%link', 'olderstuff'​) ?></div>
-</div>
-
 
 <!-- contact -->
 <section class="contact">
