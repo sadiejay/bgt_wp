@@ -8,7 +8,7 @@
 	<article class=" blog__i blog__individual1">
 
 		<div class="blog__thumb">
-			<img src="img/vonnie.jpg" alt="Girl standing in front of a grafittied door">
+			<?php the_post_thumbnail(); ?>
 		</div><!-- trip thumbnail-->
 
 		<div class="blog__text">
