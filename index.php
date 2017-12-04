@@ -5,10 +5,6 @@
 <section class="blog">
 	<h2>Blog Posts</h2>
 
-<? ​php​​​ if​​​​ (​have_posts​())​​​​: ?>
-	​​​​<? php while​​​​ (​have_posts​())​​​​:​​​
-	the_post​();​​​​?>
-
 	<article class=" blog__i blog__individual1">
 
 		<div class="blog__thumb">
@@ -23,8 +19,6 @@
 
 	</article><!--trip individual1-->
 
-	<?​php​​ endwhile​;​​​ ?>
-<?php endif​;​​​​?>
 
 
 </section><!-- blog -->
