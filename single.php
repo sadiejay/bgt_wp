@@ -1,71 +1,134 @@
 <?php get_header(); ?>
 
-	<main role="main">
-	<!-- section -->
-	<section>
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php if(have_posts()): while(have_posts()): the_post();?>
+<!-- header-->
+<header class="header">
+	<div class="header__text">
+		<h1>Trip Report pt. 1</h1>
+	</div>
+	<div class="header__hero">
+		<img src="img/blog3.jpg">
+	</div>
+</header><!-- header -->
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!-- blog content -->
+<article class="article">
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
+	<section class="article__author">
+		<h2>by clarie</h2>
+	</section><!-- author  -->
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
+	<section class="article__text">
+		<p>Fruitcake donut caramels biscuit sweet roll marshmallow chocolate bar. Gummies croissant macaroon ice cream cheesecake oat cake bonbon donut. Chocolate cake caramels croissant ice cream chocolate I love I love lollipop. I love jelly beans topping wafer oat cake. Sugar plum croissant dessert tootsie roll sweet roll sesame snaps. Liquorice sesame snaps gummies. Powder macaroon carrot cake apple pie jelly-o apple pie dessert.</p>
 
-			<!-- post details -->
-			<span class="date">
-				<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-					<?php the_date(); ?> <?php the_time(); ?>
-				</time>
-			</span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
+		<p>Lemon drops jelly beans jelly beans jelly beans toffee. I love sweet roll danish muffin cake cookie soufflé gummi bears. Donut liquorice liquorice gingerbread. Gingerbread cake donut jelly beans liquorice tart. Icing dragée I love. I love pastry topping ice cream tart. I love ice cream toffee muffin powder croissant fruitcake. Cupcake I love marshmallow toffee danish I love. Muffin jujubes sweet roll danish cookie chocolate cake macaroon dragée. Chocolate cake I love cake candy canes sesame snaps jelly lemon drops danish cake.</p>
 
-			<?php the_content(); // Dynamic Content ?>
+		<p>I love marzipan cheesecake chocolate bar toffee wafer. Bonbon I love I love macaroon dessert apple pie croissant. Icing donut I love tart. Lemon drops tiramisu jelly beans I love danish marshmallow. Tart wafer cake pudding cake tootsie roll sugar plum toffee liquorice. Pie cookie halvah candy canes cheesecake macaroon brownie. Chocolate gummi bears donut apple pie jelly-o cotton candy liquorice. Marshmallow jelly beans lemon drops. Cookie soufflé biscuit croissant. Cookie jelly beans bonbon candy canes sugar plum topping carrot cake.</p>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+	</section><!-- text-->
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+	<section class="about__author">
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+		<div class="about__photo">
 
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+			<img src="#">
 
-			<?php comments_template(); ?>
+		</div> <!-- about photo -->
 
-		</article>
-		<!-- /article -->
+		<div class="about__text">
 
-	<?php endwhile; ?>
+			<p>I love bonbon macaroon halvah danish apple pie carrot cake.</p>
 
-	<?php else: ?>
+		</div> <!-- about text -->
 
-		<!-- article -->
-		<article>
 
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+	</section><!--  about author -->
 
-		</article>
-		<!-- /article -->
+</article><!-- content__text -->
 
-	<?php endif; ?>
 
-	</section>
-	<!-- /section -->
-	</main>
 
-<?php get_sidebar(); ?>
+<!-- contact -->
+<section class="contact">
+
+	<form id="contact" action="" method="post">
+
+		<h2>comment</h2>
+
+		<fieldset>
+			<input class="input__message" type="text" tabindex="0" required>
+		</fieldset>
+
+		<fieldset>
+			<input class="input__name"  placeholder="Name" type="text" tabindex="0" required>
+		</fieldset>
+
+		<fieldset>
+			<input class="input__email"  placeholder="Email" type="text" tabindex="0" required>
+		</fieldset>
+
+		<button name="button__contact" type="submit" id="button__contact" data-submit="... flying">contact</button>
+		<button name="button__clear" type="submit" id="button__clear" data-submit="... flying">clear</button>
+
+	</form>
+
+</section><!-- contact -->
+
+
+
+
+<!-- more posts -->
+
+<section class="blog">
+	<h2>more posts</h2>
+
+
+	<article class=" blog__i blog__individual1">
+
+		<div class="blog__thumb">
+			<img src="img/vonnie.jpg" alt="Girl standing in front of a grafittied door">
+		</div><!-- trip thumbnail-->
+
+		<div class="blog__text">
+			<p>Greece 2018</p>
+		</div><!-- text-->
+
+		<button class="button button__read"><a href="blog-single.html" target="_blank" rel="noopener">read more</a></button>
+
+	</article><!--trip individual1-->
+
+	<article class="blog__i blog__individual2">
+
+		<div class="blog__thumb">
+			<img src="img/blog2.jpg"
+			alt="standing in front of statue with italian carving">
+		</div><!-- trip thumbnail-->
+
+		<div class="blog__text">
+			<p>Girls Gone Wild! South Africa 2018</p>
+		</div><!-- text-->
+
+		<button class="button button__read"><a href="blog-single.html" target="_blank" rel="noopener">read more</a></button>
+
+	</article><!--trip individual2-->
+
+	<article class="blog__i blog__individual3">
+
+		<div class="blog__thumb">
+			<img src="img/blog3.jpg" alt="posing in Bali">
+		</div><!-- blog thumbnail-->
+
+		<div class="blog__text">
+			<p>Holibeach Party</p>
+		</div><!-- text-->
+
+		<button class="button button__read"><a href="blog-single.html" target="_blank" rel="noopener">read more</a></button>
+
+	</article><!--blog individual3-->
+
+</section><!-- blog -->
+
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
