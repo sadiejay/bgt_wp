@@ -3,7 +3,7 @@
 <!-- blog -->
 
 <section class="blog">
-	<h2>Blog Posts</h2>
+	<h1>Blog Posts</h1>
 
 	<article class=" blog__i blog__individual1">
 
