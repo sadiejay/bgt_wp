@@ -12,7 +12,7 @@
 		</div><!-- trip thumbnail-->
 
 		<div class="blog__text">
-			<p>Greece 2018</p>
+			<?php the_title(); ?>
 		</div><!-- text-->
 
 		<button class="button button__read"><a href="<?php the_permalink(); ?>" target="_blank" rel="noopener">read more</a></button>
